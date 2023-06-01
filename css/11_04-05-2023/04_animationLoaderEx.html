@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .sub {
+            height: 500px;
+            display: grid;
+            place-content: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+        .loader{
+            height: 200px;
+            width: 200px;
+            border-top: 10px solid black;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-radius: 50%;
+            position: absolute;
+            top: 150px;
+            left: 570px;
+            z-index: -1;
+            animation: loader_rotate 2s linear infinite;
+        }
+        h3{
+            cursor: progress;
+            visibility: visible;
+        }
+        @keyframes loader_rotate {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sub">
+        <h3>Loading....</h3>
+        <div class="loader"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .outer{
+            height: auto;
+            width: 300px;
+            border: 2px solid blue;
+            padding: 20px;
+            margin: 10px;
+            /* overflow: hidden; */
+        }
+        /* .outer .inner{ */
+        .outer > .inner{
+            padding: inherit;
+            border: inherit;
+            height: auto;
+            width: inherit;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores eveniet veniam quia eum officiis maxime deserunt. Voluptatem deleniti, eaque quo at consequatur ea delectus accusamus quae, placeat eius harum tempora.
+        <div class="inner">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio aut obcaecati, eveniet culpa ea, perferendis rem doloribus quibusdam, ad accusantium molestiae alias minus. Ut recusandae repellendus quaerat minus minima iure.
+        </div>
+    </div>
+</body>
+</html>

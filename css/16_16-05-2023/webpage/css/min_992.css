@@ -1,0 +1,23 @@
+@media (min-width:992px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 60px;
+    }
+     /* ============== header ================== */
+     header .header-nav .nav{
+        display: flex;
+    }
+    header .header-nav .theme .menu-bar button{
+        display: none;
+    }
+    header .header-nav .logo{
+        flex: 2;
+    }
+    /* ============== homepage =============    */
+       .homepage .homepage-text{
+        width: 50%;
+    }
+    .homepage .homepage-text h1{
+        font-size: 40px;
+    }
+}

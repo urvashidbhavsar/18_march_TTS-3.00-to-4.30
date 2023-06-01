@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .grid-example{
+            /* background-color: #b1d5f4; */
+        }
+        .container{
+            margin: 0px 80px;
+        }
+        .grid-example .grid-p{
+            padding: 30px 0px;
+        }
+        .grid-example .grid-box{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+        .grid-example .grid-box .sub-box{
+            /* border: 1px solid gray; */
+        }
+        .grid-example .grid-box .sub-box img{
+            height: auto;
+            width: 100%;
+            border-radius: 10px;
+        }
+        .grid-example .grid-box .sub-box .text{
+            padding: 20px 0px;
+        }
+        .grid-example .grid-box .sub-box .text h3{
+            font-size: 25px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="grid-example">
+        <div class="container">
+            <div class="grid-p">
+                <!-- main div -->
+                <div class="grid-box">
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/g1.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Industry Oriented</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis, sunt magnam eveniet, illo aliquam animi unde ut ea aliquid culpa consectetur, possimus voluptatem similique facere laborum non alias dolorum?</p>
+                        </div>
+                    </div>
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/g2.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Industry Oriented</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis, sunt magnam eveniet, illo aliquam animi unde ut ea aliquid culpa consectetur, possimus voluptatem similique facere laborum non alias dolorum?</p>
+                        </div>
+                    </div>
+                    <div class="sub-box">
+                        <div class="image">
+                            <img src="image/g3.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Industry Oriented</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis, sunt magnam eveniet, illo aliquam animi unde ut ea aliquid culpa consectetur, possimus voluptatem similique facere laborum non alias dolorum?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

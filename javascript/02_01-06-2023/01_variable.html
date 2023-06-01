@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- there are 3 keywords are used to create a variable.
+    
+        variable => is a container to store data. 
+        it is a name of memory location.
+
+        there are keywords : var , let and const
+
+        valid names : myVar, myvar, MyVar, my_var, MYVAR, myvar1
+        invalid names : my var, my-var, 1myvar
+    -->
+    <script>
+        // using var keyword you can redeclare and reassign value
+        // it is global keyword
+        var x = 45;
+        document.write("x value is " + x);
+        
+        var x = 46;
+        document.write("<br>x value is " + x)
+
+        // in version 2015, introduced let and const keyword
+        // using let keyword you can reassign value but not redeclare.
+        // block level keyword
+        let y = 9;
+        document.write("<br>y value is " + y)
+
+        y = 10;
+        document.write("<br>y value is " + y)
+
+        // const means constant which has fixed value.
+        // using const keyword you can not redeclare or reassign value
+        const z = 12;
+        document.write("<br>z value is " + z)
+
+        // z = 23;
+        document.write("<br>z value is " + z)
+
+    </script>
+</body>
+</html>

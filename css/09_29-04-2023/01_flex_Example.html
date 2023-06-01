@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ul{
+            list-style: none;
+        }
+        .flex-value{
+            background-color: lightblue;
+        }
+        .flex-value .div-margin{
+            margin: 0px 80px;
+        }
+        .flex-value .flex-value-p{
+            padding: 50px 0px;
+        }
+        .flex-value .flex-box{
+            display: flex;
+            gap: 20px;
+        }
+        .flex-value .flex-box .left-value{
+            flex: 1;
+        }
+        .flex-value .flex-box .left-value img{
+            height: auto;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .flex-value .flex-box .right-value{
+            flex: 1;
+            padding: 30px;
+        }
+        .flex-value .flex-box .right-value h5{
+            font-size: 18px;
+            font-weight: 100;
+            color: green;
+            text-transform: capitalize;
+            padding-bottom: 10px;
+        }
+        .flex-value .flex-box .right-value h1{
+            font-size: 40px;
+            text-transform: capitalize;
+            /* padding-bottom: 20px; */
+        }
+        .flex-value .flex-box .right-value p{
+            padding: 20px 0px;
+            color: #5e5d5d;
+        }
+        .flex-value .flex-box .right-value ul{
+            line-height: 40px;
+        }
+        .flex-value .flex-box .right-value ul span{
+            padding-right: 20px;
+            color: green;
+            font-weight: 900;
+        }
+    </style>
+</head>
+<body>
+    <section class="flex-value">
+        <div class="div-margin">
+            <div class="flex-value-p">
+                <div class="flex-box">
+                    <div class="left-value">
+                        <img src="image/ab4.jpg" alt="">
+                    </div>
+                    <div class="right-value">
+                        <h5>what we do</h5>
+                        <h1>what we offer for you</h1>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At animi facilis vitae. Laboriosam perferendis veniam exercitationem reprehenderit iure.</p>
+                        <ul>
+                            <li><span class="fa-solid fa-check"></span>weed control</li>
+                            <li><span class="fa-solid fa-check"></span>pest control</li>
+                            <li><span class="fa-solid fa-check"></span>grass seeding</li>
+                            <li><span class="fa-solid fa-check"></span>industry oriented</li>
+                            <li><span class="fa-solid fa-check"></span>fresh milk product</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        img{
+            height: 600px;
+            width: 100%;
+            filter: brightness(50%);
+        }
+        .main{
+            position: relative;
+        }
+        .text{
+            width: 60%;
+            position: absolute;
+            text-align: center;
+            top: 148px;
+            left: 280px;
+        }
+        h1{
+            font-size: 50px;
+            color: white;
+            padding-bottom: 20px;
+        }
+        p{
+            font-size: 18px;
+            color: white;
+            padding-bottom: 50px;
+        }
+        button{
+            height: 40px;
+            width: 120px;
+            font-weight: 700;
+            border: 2px solid crimson;
+            background-color: transparent;
+            color: crimson;
+            border-radius: 10px;
+            /* graphical effect */
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+        }
+        button:hover{
+            background-color: crimson;
+            border: 2px solid transparent;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="image/img7.webp" alt="">
+        <div class="text">
+            <h1>Hero Banner</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores quidem illum at ad, recusandae sit quaerat cupiditate optio, porro ab dignissimos quo sint, sunt praesentium. Officiis fuga non similique pariatur.</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>

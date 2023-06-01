@@ -1,0 +1,17 @@
+@media (min-width:768px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 50px;
+    }
+     /* ============== header ================== */
+    header .header-nav .logo h6{
+        font-size: 32px;
+    }
+      /* ============== homepage =============    */
+      .homepage .homepage-text{
+        width: 70%;
+    }
+    .homepage .homepage-text h1{
+        font-size: 40px;
+    }
+}

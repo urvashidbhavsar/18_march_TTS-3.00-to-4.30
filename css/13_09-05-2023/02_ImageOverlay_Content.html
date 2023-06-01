@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        .main{
+            height: 300px;
+            width: 300px;
+            position: relative;
+            overflow: hidden;
+        }
+        .txt{
+            position: absolute;
+            top :0;
+            left:0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 128, 0, 0.653);
+            display: grid;
+            place-content: center;
+            color: white;
+            height: 100%;
+            width: 100%;
+            transform: scale(0);
+            transition: 1s all ease-in-out;
+        }
+        .txt-overlay{
+            transform: scale(0);
+            transition: 1s all ease-in-out;
+            transition-delay: 1s;
+        }
+        .main:hover .txt{
+            transform: scale(1) rotateX(360deg);
+        }
+        .main:hover .txt-overlay{
+            transform: scale(1) rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <img src="image1.jpg" alt="">
+        <div class="txt">
+            <div class="txt-overlay">
+                <h1>Hello world</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

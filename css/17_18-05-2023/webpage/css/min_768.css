@@ -1,0 +1,32 @@
+@media (min-width:768px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 50px;
+    }
+     /* ============== header ================== */
+    header .header-nav .logo h6{
+        font-size: 32px;
+    }
+      /* ============== homepage =============    */
+      .homepage .homepage-text{
+        width: 70%;
+    }
+    .homepage .homepage-text h1{
+        font-size: 40px;
+    }
+    /* ======= about us ======== */
+    /* inherit from min width 576px */
+
+    /* our work inherit from min 576px*/
+    /* =========== services =========== */
+    .services .service-box{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:20px
+    }
+    .services .service-box .img-text{
+        left: 50px;
+        bottom: 85px;
+        width: 70%;
+    }
+}

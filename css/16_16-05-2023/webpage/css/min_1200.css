@@ -1,0 +1,11 @@
+@media (min-width:1200px) {
+    /* ============ common class css =========== */
+    .container{
+        margin: 0px 80px;
+    }
+    /* header section inherit from 992px */
+    /* ============== homepage =============    */
+    .homepage .homepage-text h1{
+        font-size: 45px;
+    }
+}

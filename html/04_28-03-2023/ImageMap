@@ -1,0 +1,13 @@
+Imagemap is used to create link on some shapes.
+
+shapes => rect, circle, polygon
+
+coords (co-ordinates)=> points
+
+href =>
+
+alt =>
+
+<map>
+    <area>
+</map>

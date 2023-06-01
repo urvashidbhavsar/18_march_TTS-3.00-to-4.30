@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 10px;
+            justify-items: center;
+        }
+        .sub{
+            height: 100px;
+            width: 100px;
+            background-color: brown;
+        }
+        .sub1{
+            grid-column: 1 / span 3;
+            width: 100%;
+            /* grid-column-start: ; */
+            /* grid-column-end: ; */
+        }
+        .sub2{
+            grid-row: 2 / span 2;
+            align-self: center;
+            /* grid-row-start: ;
+            grid-row-end: ; */
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="sub sub1">div1</div>
+        <div class="sub">div2</div>
+        <div class="sub">div3</div>
+        <div class="sub sub2">div4</div>
+        <div class="sub">div5</div>
+        <div class="sub">div6</div>
+        <div class="sub">div7</div>
+        <div class="sub">div8</div>
+        <div class="sub">div9</div>
+        <div class="sub">div10</div>
+    </div>
+</body>
+</html>

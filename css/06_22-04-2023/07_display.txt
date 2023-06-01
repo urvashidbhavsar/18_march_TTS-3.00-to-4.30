@@ -1,0 +1,30 @@
+display property used to how to your data show on browser.
+
+display : inline 
+display : inline-block 
+display : block
+display : flex 
+display : grid 
+display : inline-table 
+display : flexbox 
+
+some property are worked with only display flex :
+1. flex
+2. flex-grow 
+3. flex-shrink 
+4. flex-basis 
+5. flex-wrap 
+6. flex-direction 
+7. flex-flow 
+8. gap (row-gap, column-gap)
+9. order 
+10. justify-content 
+11. align-items 
+
+some property are only work with display grid :
+1. grid-template-columns
+2. grid-template-rows 
+3. gap (row-gap, column-gap)
+4. place-content 
+5. justify-items 
+6. align-content 

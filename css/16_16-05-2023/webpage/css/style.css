@@ -1,0 +1,182 @@
+/* =============== common css ============= */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "PT Sans",sans-serif;
+}
+.container{
+    margin: 0px 80px;
+}
+/* ============= header =============*/
+header{
+    position: fixed;
+    top :0;
+    background-color: rgba(0, 0, 0, 0.622);
+    z-index: 1111;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+header::after{
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    display: block;
+    box-shadow: 0px 0px 5px gray;
+}
+header .header-p{
+    padding: 20px 0px;
+}
+header .header-nav{
+    display: flex;
+    align-items: center;
+}
+header .header-nav .logo{
+    flex: 1;
+}
+header .header-nav .logo h6{
+    font-size: 32px;
+    color:white
+}
+header .header-nav .logo p{
+    font-size: 15px;
+    margin-left: 41px;
+}
+header .header-nav .logo .fa-align-right{
+    color: #009f4d;
+}
+header .header-nav .nav{
+    flex: 4;
+}
+header .header-nav .nav ul{
+    display: flex;
+    justify-content: center;
+    gap:30px;
+}
+header .header-nav .nav ul a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+header .header-nav .theme{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+    gap: 20px;
+    align-items: center;
+}
+header .header-nav .theme .search{
+    height: 40px;
+    width: 40px;
+    background-color: #009f4d;
+    color: white;
+    display:grid;
+    place-content: center;
+    border-radius: 50%;
+}
+header .header-nav .theme .theme-i{
+    color: white;
+    font-size: 20px;
+}
+header .header-nav .theme .menu-bar button{
+    display: none;
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+    color: white;
+    border: 2px solid white;
+    background: transparent;
+    border-radius: 5px;
+}
+
+/* ============== homepage ================ */
+.homepage{
+    background-image: url(../images/b2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
+.homepage::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000a1;
+    z-index: -1;
+}
+.homepage .homepage-p{
+    padding: 210px 0px;
+}
+.homepage .homepage-text{
+    width: 50%;
+    color: white;
+}
+.homepage .homepage-text h1{
+    font-size: 45px;
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    animation: flipInX 1s ease;
+}
+.homepage .homepage-text p{
+    padding-bottom: 20px;
+}
+.homepage .homepage-text button{
+    height: 50px;
+    width: 140px;
+    background-color: #009f4d;
+    border: 2px solid transparent;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 1s all ease;
+    animation: bounceInUp 1s ease;
+}
+.homepage .homepage-text button:hover{
+    background-color: #034d27;
+}
+/* ============= about-us =============== */
+.about-us{
+    background-color: bisque;
+}
+.about-us .about-p{
+    padding: 70px 0px;
+}
+.about-us .about-flex{
+    display: flex;
+}
+.about-us .about-flex .about-left{
+    flex: 1;
+}
+.about-us .about-flex .about-right{
+    flex: 1;
+}
+.about-us .about-flex .gridbox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.about-us .about-flex .gridbox img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.about-us .about-flex .gridbox .image1{
+    grid-row: 1 / span 2;
+}

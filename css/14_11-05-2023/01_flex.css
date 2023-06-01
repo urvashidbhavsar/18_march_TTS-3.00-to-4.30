@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.flex-box{
+    background-color: rgb(160, 244, 240);
+}
+.container{
+    margin: 0px 80px;
+}
+.flex-box .flex-box-p{
+    padding: 50px 0px;
+}
+.flex-box .res-flex-box{
+    display: flex;
+    gap: 20px;
+}
+.flex-box .res-flex-box .left-content{
+    flex: 1;
+    text-align: center;
+}
+.flex-box .res-flex-box .left-content .head{
+    font-size: 38px;
+    color: palevioletred;
+}
+.flex-box .res-flex-box .left-content .sub-head{
+    font-size: 22px;
+    color: gray;
+    padding: 20px 0px;
+}
+.flex-box .res-flex-box .left-content p{
+    color: gray;
+}
+.flex-box .res-flex-box .left-content .btns{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.flex-box .res-flex-box .left-content button{
+    height: 45px;
+    width: 150px;
+    font-size: 20px;
+    color:white;
+}
+.flex-box .res-flex-box .left-content .btn1{
+    border: 2px solid palevioletred;
+    background-color: palevioletred;
+}
+.flex-box .res-flex-box .left-content .btn2{
+    border: 2px solid #125df3;
+    background-color: #125df3;
+}
+.flex-box .res-flex-box .left-content .btn1:hover{
+    border: 2px solid white;
+}
+.flex-box .res-flex-box .left-content .btn2:hover{
+    background-color: transparent;
+    color: #125df3;
+}
+.flex-box .res-flex-box .right-img{
+    flex: 1;
+}
+.flex-box .res-flex-box .right-img img{
+    height: auto;
+    max-width: 100%;
+}
+
+/* ================== media query ================ */
+@media (max-width:576px) {
+    .container{
+        margin: 0px 20px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-box .res-flex-box .left-content .head{
+        font-size: 33px;
+    }
+}
+@media (min-width:576px) {
+    .container{
+        margin: 0px 30px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .flex-box .res-flex-box .left-content .head{
+        font-size: 33px;
+    }
+}
+@media (min-width:768px) {
+    .container{
+        margin: 0px 50px;
+    }
+    /* inherit value from min-width 576px */
+    .flex-box .res-flex-box .left-content .head{
+        font-size: 38px;
+    }
+    
+}
+@media (min-width:992px) {
+    .container{
+        margin: 0px 50px;
+    }
+    .flex-box .res-flex-box{
+        display: flex;
+        flex-direction: row;
+    }
+}
+@media (min-width:1200px) {
+    .container{
+        margin: 0px 80px;
+    }
+}

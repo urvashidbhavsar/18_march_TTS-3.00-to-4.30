@@ -1,0 +1,9 @@
+how we can positioning an element in some area.
+
+position : static (default)
+position : fixed
+position : sticky
+position : relative
+position : absolute
+
+some properties are only work with position : top, left, bottom, right and z-index.

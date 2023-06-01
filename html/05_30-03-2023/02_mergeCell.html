@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        for cell merge used 2 attribute : rowspan and colspan
+
+        remember these two attribute only used in <td> or <th> tag.
+
+        when we used rowspan remove that column from next row.
+        when we used colspan remove that column that particular row.
+     -->
+    <table border="1">
+        <tr>
+            <th>Product</th>
+            <th>Flavors</th>
+        </tr>
+        <tr>
+            <td rowspan="3">Milk</td>
+            <td>Almond</td>
+        </tr>
+        <tr>
+            <td>Mango</td>
+        </tr>
+        <tr>
+            <td>Chocolate</td>
+        </tr>
+        <tr>
+            <td colspan="2">These are exclusive flavors</td>
+        </tr>
+    </table>
+</body>
+</html>
