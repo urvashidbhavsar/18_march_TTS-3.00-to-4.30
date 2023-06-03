@@ -1,0 +1,58 @@
+in javascript there are 2 conditional statements :
+(1) if statement 
+(2) switch statement 
+
+(1) if statement :
+    if(condition){
+        statements;
+    }
+
+[a] if... else
+    if(condition){
+        statement
+    }else{
+        statement
+    }
+
+[b] if... else if.. else 
+    if(condition){
+        statement
+    }else if(condition){
+        statement
+    }else{
+
+    }
+
+[c] nested if
+    if(condition){
+        statement
+        if(condition){
+
+        }
+    }else{
+        statement
+        if(condition){
+
+        }
+    }
+
+(2) switch statement
+
+switch(variable_name){
+    case 1:
+        statement
+        break 
+    case 2:
+        statement
+        break
+    ....
+    case N:
+        statement
+        break
+    default:
+        statement
+        break
+}
+
+
+
