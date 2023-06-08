@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Enter Any Value : </label>
+        <input type="text" name="" id="userval">
+
+        <button onclick="return myfunc()">Click Here</button>
+    </form>
+    <p>Enter value are : <span id="msg"></span></p>
+    <!-- <p id="msg"></p> -->
+
+    <script>
+        function myfunc() {
+            let user = document.getElementById("userval").value;
+
+            document.getElementById("msg").innerText = user;
+            return false;
+        }
+    </script>
+</body>
+
+</html>
