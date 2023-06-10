@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Enter Table No : </label>
+        <input type="text" name="" id="number">
+        <button onclick="return Display_table()">Display</button>
+    </form>
+    <br>
+    <div class="div1"></div>
+
+    <script>
+        function Display_table() {
+            let num = document.getElementById("number").value;
+            let div = document.querySelector(".div1");
+            if (num == "") {
+                alert("Enter Value")
+            } else {
+                var res = "";
+                for (let i = 1; i <= 10; i++) {
+                    res = res + "<p>" + num + "*" + i + "=" + num * i + "</p>"
+                }
+                div.innerHTML = res
+                return false
+            }
+        }
+    </script>
+</body>
+
+</html>

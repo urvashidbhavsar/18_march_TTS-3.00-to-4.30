@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            /* color: darkred; */
+        }
+    </style>
+    <script>
+        function change_text() {
+            var head = document.querySelector(".heading");
+            head.style.color = "darkred"
+        }
+        function remove_text() {
+            var head = document.querySelector(".heading");
+            head.style.color = "black"
+        }
+    </script>
+</head>
+
+<body>
+    <h1 class="heading" onmouseover="change_text()" onmouseleave="remove_text()">Hello user</h1>
+</body>
+
+</html>
