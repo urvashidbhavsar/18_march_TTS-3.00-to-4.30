@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .numCount {
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            color: white;
+            display: grid;
+            place-content: center;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="numCount">
+        <div id="counting" class=""></div>
+    </div>
+
+    <script>
+        let count = setInterval(updateNum, 120);
+        let start = 100;
+        function updateNum() {
+            let counting = document.getElementById("counting");
+            counting.innerHTML = ++start;
+            if (start == 500) {
+                clearInterval(count)
+            }
+        }
+    </script>
+</body>
+
+</html>
