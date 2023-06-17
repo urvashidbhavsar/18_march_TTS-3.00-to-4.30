@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function check_mno() {
+            let mobile = document.getElementById("mno").value;
+            if (mobile == "" || mobile == null) {
+                document.getElementById("msg").innerText = "Enter mobile no"
+                return false
+            } else if (mobile.length < 10) {
+                document.getElementById("msg").innerText = "Enter Proper Number";
+                return false
+            }
+            else {
+                document.getElementById("msg").innerText = ""
+                return false
+            }
+        }
+        function mobile_validation() {
+            let mobile = document.getElementById("mno").value;
+            let regex = /^[0-9]*$/;
+            let first = /^[6-9]/
+            if (regex.test(mobile) && first.test(mobile)) {
+                document.getElementById("msg").innerText = "";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "invalid number";
+                return false
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter Mobile No : </label>
+        <input type="text" name="" id="mno" onblur="return check_mno()" onkeyup="return mobile_validation()"
+            maxlength="10">
+
+        <button type="submit" onclick="return check_mno()">Check Mobile No</button>
+
+        <br><br>
+        <span id="msg"></span>
+    </form>
+</body>
+
+</html>

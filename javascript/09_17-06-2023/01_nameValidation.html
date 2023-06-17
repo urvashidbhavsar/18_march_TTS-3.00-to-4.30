@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function name_check() {
+            let uname = document.getElementById("u_name").value;
+            if (uname == "" || uname == null) {
+                // alert("Enter name")
+                document.getElementById("msg").innerText = "Enter your name";
+                return false;
+            } else {
+                document.getElementById("name").innerText = uname;
+                return false;
+            }
+        }
+        function name_validation() {
+            let uname = document.getElementById("u_name").value;
+            let regex = /^[a-zA-Z]*$/
+            // test(), match()
+            if (uname.match(regex)) {
+                document.getElementById("msg").innerText = "";
+                return false
+            } else {
+                document.getElementById("msg").innerText = "Only Alphabets allowed";
+                return false
+            }
+        }
+    </script>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Enter your name : </label>
+        <input type="text" name="" id="u_name" value="" onblur="return name_check()" onkeyup="return name_validation()">
+
+        <button onclick="return name_check()">Check</button>
+
+        <br><br>
+        <span id="msg"></span>
+
+        <p>Entered Name is : <b id="name"></b></p>
+    </form>
+</body>
+
+</html>
