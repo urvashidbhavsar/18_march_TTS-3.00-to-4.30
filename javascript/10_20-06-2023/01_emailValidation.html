@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function check_email() {
+            let mail = document.getElementById("mail").value;
+            if (mail == "" || mail == null) {
+                document.getElementById("msg").innerText = "Enter Mail";
+                return false
+            } else {
+                document.getElementById("msg").innerText = ""
+                return false
+            }
+        }
+        function email_validation() {
+            let mail = document.getElementById("mail").value;
+            let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if (!(regex.test(mail))) {
+                document.getElementById("msg").innerText = "invalid email address";
+                return false;
+            } else {
+                document.getElementById("msg").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Email :</label>
+        <input type="text" name="" id="mail" onkeyup="return email_validation()" onblur="return check_email()">
+
+        <button type="submit" onclick="return check_email()">Check Email</button>
+
+        <br><br>
+        <span id="msg"></span>
+    </form>
+</body>
+
+</html>

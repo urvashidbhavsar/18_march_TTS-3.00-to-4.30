@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function checkValue() {
+            // radio button
+            let male = document.getElementById("male").checked;
+            let female = document.getElementById("female").checked;
+            let other = document.getElementById("other").checked;
+            // checkbox
+            let c1 = document.getElementById("c1").checked;
+            let c2 = document.getElementById("c2").checked;
+            let c3 = document.getElementById("c3").checked;
+            // dropdown
+            let city = document.getElementById("city").value;
+
+            if (male == false && female == false && other == false) {
+                document.getElementById("msg").innerText = "Select Gender";
+                return false;
+            } else if (c1 == false && c2 == false && c3 == false) {
+                document.getElementById("msg1").innerText = "Select Subject";
+                return false;
+            } else if (city == "-1") {
+                document.getElementById("msg2").innerText = "Select City";
+                return false;
+            }
+            else {
+                document.getElementById("msg").innerText = "";
+                document.getElementById("msg1").innerText = "";
+                document.getElementById("msg2").innerText = "";
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form action="#">
+        <label for="">Gender : </label>
+        <input type="radio" name="gen" id="male" onblur="return checkValue()"> Male
+        <input type="radio" name="gen" id="female" onblur="return checkValue()"> Female
+        <input type="radio" name="gen" id="other" onblur="return checkValue()"> Other
+        <span id="msg"></span>
+
+        <br><br>
+        <label for="">Subject : </label>
+        <input type="checkbox" name="" id="c1"> HTML
+        <input type="checkbox" name="" id="c2"> CSS
+        <input type="checkbox" name="" id="c3"> JS
+        <span id="msg1"></span>
+
+        <br><br>
+        <label for="">City : </label>
+        <select name="" id="city">
+            <option value="-1">---select---</option>
+            <option value="">Surat</option>
+            <option value="">Baroda</option>
+        </select>
+        <span id="msg2"></span>
+        <br><br>
+
+        <button type="submit" onclick="return checkValue()">Click Here</button>
+    </form>
+</body>
+
+</html>
