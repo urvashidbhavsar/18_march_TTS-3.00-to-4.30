@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .regpage {
+            border: 2px solid black;
+            height: auto;
+            width: 60%;
+            margin: auto;
+            padding: 10px;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr;
+            padding: 10px;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            height: 22px;
+            width: 250px;
+            padding: 0px 5px;
+        }
+
+        button {
+            height: 30px;
+            width: 100px;
+            background-color: rgb(7, 32, 7);
+            color: white;
+            border: 2px solid rgb(7, 32, 7);
+            cursor: pointer;
+        }
+
+        span {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="regpage">
+        <h3>Registration page</h3>
+        <form action="#">
+            <!-- firstname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Firstname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="firstname" id="fname" onblur="return check_blank_value(this, 'msg')">
+                </div>
+                <div class="col">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- Lastname -->
+            <div class="row">
+                <div class="col">
+                    <label for="">Lastname</label>
+                </div>
+                <div class="col">
+                    <input type="text" name="lastname" id="lname" onblur="return check_blank_value(this, 'msg1')">
+                </div>
+                <div class="col">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+
+            <!-- btn -->
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <button type="submit" onclick="return check_form()">Submit </button>
+                </div>
+                <div class="col"></div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

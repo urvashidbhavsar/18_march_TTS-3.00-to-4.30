@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let person = {
+            firstname: "Rahul",
+            lastname: "Patel",
+            mobileNo: 9856326566,
+            DateOfBirth: "02-01-2000"
+        }
+
+        console.log(person);
+        // print single value 
+        console.log("First Name is : " + person.firstname);
+        console.log("Last Name is : " + person.lastname);
+        console.log("Mobile No is : " + person.mobileNo);
+        console.log("Date of Birth is : " + person.DateOfBirth);
+
+        // print value using loop
+        let p;
+        for (p in person) {
+            let ele = person[p];
+            console.log(p + " => " + ele);
+        }
+    </script>
+</body>
+
+</html>
