@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .image1 {
+            background: url(images/image1.webp) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+
+        .image2 {
+            background: url(images/image2.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+
+        .image3 {
+            background: url(images/image3.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+
+        .image4 {
+            background: url(images/image4.jpg) no-repeat center;
+            background-size: cover;
+            height: 600px;
+        }
+
+        .bx-wrapper {
+            border: none;
+            background: transparent;
+        }
+
+        .bx-wrapper .bx-pager {
+            position: absolute;
+            bottom: 39px;
+            width: 12%;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a {
+            background-color: red;
+        }
+
+        .bx-wrapper .bx-pager.bx-default-pager a.active {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bxslider">
+        <div class="image1">
+            <h1>Image 1</h1>
+        </div>
+        <div class="image2">
+            <h1>Image 2</h1>
+        </div>
+        <div class="image3">
+            <h1>Image 3</h1>
+        </div>
+        <div class="image4">
+            <h1>Image 4</h1>
+        </div>
+    </div>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- bxslider script js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $(".bxslider").bxSlider({
+                mode: "fade",
+                speed: 1000,
+                infiniteLoop: true,
+                captions: true,
+                pager: true,
+                // pagerType: "short",
+                // pagerShortSeparator: " - "
+                controls: false,
+            });
+        })
+    </script>
+</body>
+
+</html>
