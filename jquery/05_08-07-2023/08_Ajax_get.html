@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ajax = asynchronized javascript and xml 
+        xml = extensible markup language
+    -->
+    <button>Load Ajax</button>
+    <!-- <hr> -->
+    <div id="loadData"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $.get("02_traversing.txt", function (data, textStatus) {
+                    $("#loadData").html("data : <br> " + data, "<br> status : " + textStatus)
+                })
+            })
+        })
+    </script>
+</body>
+
+</html>

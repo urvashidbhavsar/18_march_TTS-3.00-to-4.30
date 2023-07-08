@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .para {
+            font-size: 19px;
+            color: blue;
+            border: 2px solid red;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Click Here</button>
+    <hr>
+    <p id="p1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt pariatur assumenda quasi neque unde ipsam
+        vitae, ratione nihil hic eius consectetur quod totam magnam, aliquam nobis praesentium ex ut voluptates.
+    </p>
+    <p id="p2">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt pariatur assumenda quasi neque unde ipsam
+        vitae, ratione nihil hic eius consectetur quod totam magnam, aliquam nobis praesentium ex ut voluptates.
+    </p>
+    <p id="p3">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt pariatur assumenda quasi neque unde ipsam
+        vitae, ratione nihil hic eius consectetur quod totam magnam, aliquam nobis praesentium ex ut voluptates.
+    </p>
+    <p id="p4">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt pariatur assumenda quasi neque unde ipsam
+        vitae, ratione nihil hic eius consectetur quod totam magnam, aliquam nobis praesentium ex ut voluptates.
+    </p>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                // $("p").filter("#p2").addClass("para")
+                // $("p").first().addClass("para")
+                // $("p").last().addClass("para")
+                // $("p").eq(3).addClass("para")
+                $("p").not("#p3").addClass("para")
+            })
+        })
+    </script>
+</body>
+
+</html>
