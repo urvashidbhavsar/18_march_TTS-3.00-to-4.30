@@ -1,0 +1,7 @@
+No    Tag / input type                        class 
+1       label                                form-label 
+2       input type = text, date               form-control
+3       input type = radio/checkbox           form-check-input 
+4       label for input type radio/checkbox   form-check-label
+5       to set radio and checkbox in one      form-check-inline
+        line
