@@ -1,0 +1,16 @@
+No    Tag / input type                        class 
+1       label                                form-label 
+2       input type = text, date, email       form-control
+        password, month, datetime-local, 
+        textarea, search, number
+3       input type = radio/checkbox           form-check-input 
+4       label for input type radio/checkbox   form-check-label
+5       to set radio and checkbox in one      form-check-inline
+        line
+6       for drop-down                         form-select 
+7       for range                             form-range 
+8       for input type color                 form-control & form-control-color
+
+group classes 
+to join label, button, dropdown with input type text used class in <div> tag = input-group
+to join label, button, dropdown with input type text used class => input-group-text 
