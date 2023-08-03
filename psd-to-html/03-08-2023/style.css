@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.btnblue {
+    background-color: blue;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 40px;
+}
+
+.btnblue:hover {
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
+}
+
+.fixedbtn {
+    color: #242f51 !important;
+}
+
+/* ================ */
+header .nav-item a {
+    color: #242f51;
+    font-size: 16px;
+}
+
+header .navbar-nav {
+    display: flex;
+    justify-content: end !important;
+    width: 100%;
+}
+
+header .navbar-nav li {
+    padding: 10px;
+}
+
+/* ================= */
+.homepage {
+    background-image: url(images/HomeLayer.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.homepage .topText {
+    display: flex;
+    background-color: #e2eaed;
+    border-radius: 40px;
+    color: #242f51;
+    width: fit-content;
+}
+
+.homepage .topText .icon {
+    height: 23px;
+    width: 23px;
+    display: grid;
+    place-content: center;
+    background-color: #feaa25;
+    border-radius: 50%;
+}
+
+.homepage .topText span {
+    color: white;
+}
+
+.homepage h1 {
+    color: #242f51;
+}
+
+.homepage p {
+    letter-spacing: 1.5px;
+}
+
+.compname p {
+    color: #242f51;
+}
